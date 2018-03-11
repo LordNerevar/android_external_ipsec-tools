@@ -106,6 +106,8 @@
 #define SADB_X_EALG_AESCBC  SADB_X_EALG_RIJNDAELCBC
 #endif
 
+#define bcopy(a, b, c) memcpy((b), (a), (c))
+
 /* prototype */
 static u_int ipsecdoi2pfkey_aalg __P((u_int));
 static u_int ipsecdoi2pfkey_ealg __P((u_int));
